@@ -1,0 +1,37 @@
+<?php
+
+function favorites_menu()
+{
+    $items = array();
+    $items['favorite_movies'] = array(
+            'title' => 'My Favorite Movies',
+            'page callback' => 'favorite_movies',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+    $items['favorite_books'] = array(
+            'title' => 'My Favorite Books',
+            'page callback' => 'favorite_books',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+    $items['favorite_songs'] = array(
+            'title' => 'My Favorite Songs',
+            'page callback' => 'favorite_songs',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+    return $items;
+}
+
+function favorite_movies() {
+    return '<p>Here are 3 of my favorite movies</p>';
+}
+
+function favorite_books() {
+    return '<p>Here are 3 of my favorite books</p>';
+}
+
+function favorite_songs() {
+    return '<p>Here are 3 of my favorite songs</p>';
+}
