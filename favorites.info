@@ -1,0 +1,5 @@
+name = favorites
+description = Creates 3 menu items, each item leads to a page displaying a list of items.
+package = My First Modules
+core = 7.x
+files[] = favorites.module
